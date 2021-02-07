@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".Activitys.LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/activity_login_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:fontFamily="@font/vazir_bold"
+            android:gravity="center|right"
+            android:text="ورود"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/activity_login_edtLUserName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="85dp"
+                android:layout_marginRight="24dp"
+                android:textColorHint="@color/color_purple"
+                app:counterEnabled="true"
+                app:counterMaxLength="25">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/activity_login_edtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/vazir_medium"
+                    android:hint="نام کاربری"
+                    android:inputType="text|textPersonName"
+                    android:paddingRight="12dp"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/activity_login_edtLPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="24dp"
+                android:textColorHint="@color/color_purple"
+                app:counterEnabled="true"
+                app:counterMaxLength="25"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/activity_login_edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/vazir_medium"
+                    android:hint="رمز عبور"
+                    android:inputType="textPassword"
+                    android:paddingRight="12dp"
+                    android:textColorHint="@color/color_purple"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/activity_login_chk1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="24dp"
+                android:buttonTint="@color/color_purple"
+                android:fontFamily="@font/vazir_medium"
+                android:gravity="center|right"
+                android:text="مرا به خاطر بسپار"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/activity_login_btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/shape"
+        android:fontFamily="@font/vazir"
+        android:text="ورود"
+        android:textSize="24sp" />
+
+
+</LinearLayout>
